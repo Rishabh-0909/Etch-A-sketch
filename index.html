@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div id="animate-character">Etch-A-Sketch</div>
+    </div>
+
+    <div class="grid-size">
+        <label>New grid size :</label>
+        <input type="text" id="user-number" class="user-number">
+        <p id="copy-input"></p>
+         <button id='user-submit' class="user-submit">Submit</button> 
+    </div>
+    <p id="prompt"></p>
+
+    <div id="buttons">
+    <form id="button-container">
+       <label><input type="radio" name="pen" id="black-pen"> Black</label>
+<label><input type="radio" name="pen" id="red-pen"> Red</label>
+<label><input type="radio" name="pen" id="blue-pen"> Blue</label>
+<label><input type="radio" name="pen" id="rainbow"> Rainbow</label>
+<label><input type="radio" name="pen" id="eraser"> Eraser</label>
+    </form>
+
+    <button id="clear-button">Clear</button>
+</div>
+
+
+    <div class="canvas">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Copyright &copy; Rishabh's projects 2026</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

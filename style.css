@@ -1,0 +1,135 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:rgb(201, 199, 199) ;
+    height:100vh;
+    width:100vw;
+    font-family: Exo;
+}
+
+#header{
+    margin-top: 15px;
+    text-align: center;
+    animation: colorChange 5s infinite;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+@keyframes colorChange {
+    0%   { color: red; }
+    40%  {color:darkred}
+    70%{color:orangered}
+    100%{color:red}
+}
+
+.grid-size{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+    color:black;
+    font-weight: 900;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-number{
+    width:20px;
+    border-radius: 5px;
+    font-family: exo;
+    font-weight: 800;
+    text-align: center;
+    font-size: 10px;
+    margin-left:2px;
+}
+
+.user-submit{
+    
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border:1px solid black;
+    font-size: 10px;
+    font-weight: 800;
+    width:50px
+}
+
+#clear-button {
+    
+    background-color: antiquewhite;
+    border-radius: 5px;
+    font-family: exo;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 10px;
+    border: 1px solid black;
+
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-family: exo;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+#button-container label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#button-container input[type="radio"] {
+  margin: 0;
+}
+
+#prompt {
+    font-size: 10px;
+    color: darkred;
+    text-align: center;
+    font-weight: 800;
+}
+
+#copy-input {
+     margin-right: 10px;
+     display:flex;
+     margin-left:2px;
+ }
+
+
+ .canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+     
+    height: 60vh;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    border: 15px solid rgb(150, 142, 142);
+    border-radius: 14px;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    border: 1px solid rgb(243, 239, 239);
+    flex: 1;
+}
+
+#footer{
+    text-align: center;
+    margin:20px;
+    font-size: 15px;
+}
